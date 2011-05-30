@@ -1,0 +1,2 @@
+class CustomCollectionsController < FrontController
+end

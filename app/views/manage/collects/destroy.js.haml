@@ -1,0 +1,5 @@
+:plain
+	$( '#custom_collections' )
+		.html( "#{ escape_javascript( render @custom_collections ) }" );
+
+= render 'shared/notify'

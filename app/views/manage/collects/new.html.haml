@@ -1,0 +1,16 @@
+%h1 Collect into #{ parent.name }
+
+- for collectable_class in ArtisanEngine::Collectability.collectable_models
+	= form_for @collect, :url => custom_collection_collects_path( parent ) do |f|
+		= hidden_field_tag 'collect[collectable_type]', collectable_class.to_s.classify
+	
+		= label_tag collectable_class.to_s, collectable_class.to_s.titleize.pluralize
+		= collection_select :collect, 
+								  :collectable_id, 
+								  collectable_class.to_s.classify.constantize.all, 
+								  :id, 
+								  :name, 
+								  {}, 
+								  { :id => collectable_class.to_s }
+		
+		= f.submit 'Collect'

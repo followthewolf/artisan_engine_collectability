@@ -1,0 +1,14 @@
+= render 'shared/listability/make_sortable', :type => :collect, :parent_div => '.collects'
+
+%h1 Manage Custom Collections
+
+%ol#custom_collections
+	= render @custom_collections
+
+%h4 Create a Custom Collection
+
+= form_for :custom_collection, :url => custom_collections_path, :remote => true do |f|
+	= f.label 		:name
+	= f.text_field :name
+	
+	= f.submit 		'Create Custom Collection'

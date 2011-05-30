@@ -1,0 +1,6 @@
+%li[ collect ]
+	.handle= image_tag 'artisan_engine/listability/handle.png'
+	.name= collect.collectable.name
+	
+	.links
+		= button_to 'Delete', custom_collection_collect_path( collect.custom_collection, collect ), :method => :delete

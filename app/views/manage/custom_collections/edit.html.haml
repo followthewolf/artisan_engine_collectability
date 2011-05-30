@@ -1,0 +1,7 @@
+= render 'shared/form_errors', :object => @custom_collection
+
+= form_for @custom_collection do |f|
+	= f.label 		:name
+	= f.text_field :name
+	
+	= f.submit
