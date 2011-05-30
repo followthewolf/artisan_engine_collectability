@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'artisan_engine_collectability'
   s.summary     = 'Can collect collectable models into custom collections.'
-  s.description = 'TODO.'
+  s.description = 'Can collect collectable models into custom collections.'
   s.files       = Dir[ "{ app, config, lib }/**/*" ] + [ "Gemfile" ]
   s.version     = '0.0.1'
 
