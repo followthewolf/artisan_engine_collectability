@@ -7,7 +7,7 @@
 
 %h4 Create a Custom Collection
 
-= form_for :custom_collection, :url => custom_collections_path, :remote => true do |f|
+= form_for :custom_collection, :url => manage_custom_collections_path, :remote => true do |f|
 	= f.label 		:name
 	= f.text_field :name
 	

@@ -2,9 +2,9 @@
 	.name= custom_collection.name
 	
 	.links
-		= link_to 'Collect', new_custom_collection_collect_path( custom_collection )
-		= link_to 'Edit', edit_custom_collection_path( custom_collection )
-		= button_to 'Delete', custom_collection_path( custom_collection ), :method => :delete
+		= link_to 'Collect', new_manage_custom_collection_collect_path( custom_collection )
+		= link_to 'Edit', edit_manage_custom_collection_path( custom_collection )
+		= button_to 'Delete', manage_custom_collection_path( custom_collection ), :method => :delete
 	
 	%ol.collects
 		= render custom_collection.collects.in_position

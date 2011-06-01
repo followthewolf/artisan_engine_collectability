@@ -1,6 +1,6 @@
 = render 'shared/form_errors', :object => @custom_collection
 
-= form_for @custom_collection do |f|
+= form_for @custom_collection, :url => manage_custom_collection_path( @custom_collection ) do |f|
 	= f.label 		:name
 	= f.text_field :name
 	

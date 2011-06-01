@@ -21,7 +21,7 @@ feature 'View a Custom Collection', %q{
     collect :record => 'Pink Floyd', :into => 'Hippy Beats'
     
     # And I am visiting the show custom collection page,
-    visit '/custom_collections/hippy-beats'
+    visit '/collections/hippy-beats'
   end
   
   scenario "I can view a custom collection and see its collected items" do
