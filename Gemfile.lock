@@ -1,12 +1,6 @@
-PATH
-  remote: .
-  specs:
-    artisan_engine_collectability (0.0.1)
-      artisan_engine_core
-      artisan_engine_listability
-
-PATH
-  remote: ../core
+GIT
+  remote: git@github.com:followthewolf/artisan_engine_core.git
+  revision: ab1917fab32e17ec7f5cb6fca94ee9c418de2c7f
   specs:
     artisan_engine_core (0.0.1)
       barista (= 1.0.0)
@@ -18,11 +12,19 @@ PATH
       rails (= 3.0.7)
       rdiscount (= 1.6.8)
 
-PATH
-  remote: ../listability
+GIT
+  remote: git@github.com:followthewolf/artisan_engine_listability.git
+  revision: c29aaef73aaf867b7a9dbb20b281d89ef6ed92b0
   specs:
     artisan_engine_listability (0.0.1)
       artisan_engine_core
+
+PATH
+  remote: .
+  specs:
+    artisan_engine_collectability (0.0.1)
+      artisan_engine_core
+      artisan_engine_listability
 
 GEM
   remote: http://rubygems.org/
