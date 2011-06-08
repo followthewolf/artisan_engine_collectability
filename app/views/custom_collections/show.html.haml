@@ -1,5 +1,5 @@
 %h1= @custom_collection.name
 
 .custom_collection{ :id => @custom_collection.name.delete( ' ' ).underscore }
-	- for collect in @custom_collection.collects
+	- for collect in @custom_collection.collects.in_position
 		= render collect.collectable
