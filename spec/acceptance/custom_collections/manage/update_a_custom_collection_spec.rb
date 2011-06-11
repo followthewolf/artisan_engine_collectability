@@ -20,8 +20,6 @@ feature 'Update a Custom Collection', %q{
   end
   
   scenario "I can update a custom collection with valid attributes" do
-    puts custom_collection_path( CustomCollection.first )
-    
     # When I fill in a new name and click Update Custom Collection,
     fill_in 'Name', :with => 'Subordinate Records'
     click_button 'Update Custom Collection'
